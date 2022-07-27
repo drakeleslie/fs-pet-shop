@@ -71,10 +71,10 @@ app.delete("/pets/:id", (req, res) => {
     const data = JSON.parse(str);
     const { id } = req.params;
     const petId = data[id];
-
-    return writeFile("pets.json", JSON.stringify(data)).then((str) => {
-      res.send(petId);
-    });
+    res.send(petId);
+    data.splice(id, 1);
+    //data.remove(id);
+    return writeFile("pets.json", JSON.stringify(data)).then((str) => {});
   });
 });
 
