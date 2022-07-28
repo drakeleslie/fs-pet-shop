@@ -1,1 +1,5 @@
-[{"age":21,"kind":"dog","name":"frank"}]
+[
+  { "age": 21, "kind": "dog", "name": "frank" },
+  { "age": 99, "kind": "cat", "name": "sunday" },
+  { "age": 21, "kind": "dog", "name": "frank" }
+]
